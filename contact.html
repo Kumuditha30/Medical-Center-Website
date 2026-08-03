@@ -1,5 +1,174 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Us | SUWAYU Ayurveda Medical Center</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body class="inner-page"><header class="site-header"><a href="index.html" class="brand"><span class="brand-mark">☘</span><span><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span></a><button class="menu-button" id="menuButton" aria-label="Open navigation"><span></span><span></span><span></span></button><nav class="main-nav" id="mainNav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About Us</a><a href="treatments.html" class="nav-link">Treatments</a><a href="contact.html" class="nav-link active">Contact Us</a><a href="contact.html" class="nav-cta">Book Consultation</a></nav></header>
-<main><section class="page-banner"><p class="eyebrow light">Contact us</p><h1>Begin your wellness journey.</h1><p>Ask a question or request an appointment with our care team.</p></section><section class="contact section"><div class="contact-panel reveal"><div class="contact-details"><p class="eyebrow light">Visit or call</p><h2>We are ready to help.</h2><p>Contact reception to arrange your personalised consultation.</p><div class="contact-item"><span>⌖</span><div><strong>Medical Center Address</strong><p>123 Ayurveda Mawatha,<br>Colombo, Sri Lanka</p></div></div><div class="contact-item"><span>☎</span><div><strong>Telephone</strong><p><a href="tel:+94112345678">+94 11 234 5678</a><br><a href="tel:+94771234567">+94 77 123 4567</a></p></div></div><div class="contact-item"><span>✉</span><div><strong>Email</strong><p><a href="mailto:care@suwasetha.lk">care@suwasetha.lk</a></p></div></div><div class="contact-item"><span>◷</span><div><strong>Opening Hours</strong><p>Monday–Saturday: 8.00 AM–6.00 PM<br>Sunday: By appointment</p></div></div></div>
-<form class="contact-form" id="contactForm" action="https://formsubmit.co/care@suwasetha.lk" method="POST"><input type="hidden" name="_subject" value="New SUWAYU website message"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><p class="eyebrow">Appointment request</p><h3>How may we help you?</h3><div class="field-row"><label>Full name<input type="text" name="name" placeholder="Your name" required></label><label>Telephone<input type="tel" name="phone" placeholder="+94..." required></label></div><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label><label>Treatment interest<select name="treatment" required><option value="">Select a treatment</option><option>Gynaecology Treatments</option><option>Acupuncture</option><option>Panchakarma</option><option>Fractures &amp; Sprains</option><option>Nasya Therapy</option><option>General Consultation</option></select></label><label>Message<textarea name="message" rows="5" placeholder="Briefly describe your request" required></textarea></label><button class="button button-dark" type="submit">Send Appointment Request</button><p class="form-message">The first message sends a confirmation email to activate the form.</p></form></div><div class="map-wrap reveal"><iframe title="Hospital location map" src="https://www.google.com/maps?q=Colombo%2C%20Sri%20Lanka&z=13&output=embed" width="100%" height="450" style="border:0" loading="lazy"></iframe></div></section></main>
-<footer><div class="footer-brand"><span class="brand-mark">☘</span><div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div></div><p>Traditional care for balanced living.</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="treatments.html">Treatments</a><a href="contact.html">Contact</a></div><p class="copyright">© <span id="year"></span> SUWAYU Ayurveda Medical Center.</p></footer><button class="back-to-top" id="backToTop">↑</button><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Us | SUWAYU Ayurveda Medical Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="inner-page">
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark">☘</span
+        ><span
+          ><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span
+        ></a
+      ><button class="menu-button" id="menuButton" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a
+        ><a href="about.html" class="nav-link">About Us</a
+        ><a href="treatments.html" class="nav-link">Treatments</a
+        ><a href="contact.html" class="nav-link active">Contact Us</a
+        ><a href="contact.html" class="nav-cta">Book Consultation</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <p class="eyebrow light">Contact us</p>
+        <h1>Begin your wellness journey.</h1>
+        <p>Ask a question or request an appointment with our care team.</p>
+      </section>
+      <section class="contact section">
+        <div class="contact-panel reveal">
+          <div class="contact-details">
+            <p class="eyebrow light">Visit or call</p>
+            <h2>We are ready to help.</h2>
+            <p>Contact reception to arrange your personalised consultation.</p>
+            <div class="contact-item">
+              <span>⌖</span>
+              <div>
+                <strong>Medical Center Address</strong>
+                <p>123 Ayurveda Mawatha,<br />Colombo, Sri Lanka</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>☎</span>
+              <div>
+                <strong>Telephone</strong>
+                <p>
+                  <a href="tel:+94112345678">+94 11 234 5678</a><br /><a
+                    href="tel:+94771234567"
+                    >+94 77 123 4567</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>✉</span>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:kumudithanarangoda30@gmail.com">suwayuayur@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>◷</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>
+                  Monday–Saturday: 8.00 AM–6.00 PM<br />Sunday: By appointment
+                </p>
+              </div>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/kumudithanarangoda30@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New SUWAYU website message"
+            /><input type="hidden" name="_template" value="table" /><input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+            <p class="eyebrow">Appointment request</p>
+            <h3>How may we help you?</h3>
+            <div class="field-row">
+              <label
+                >Full name<input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required /></label
+              ><label
+                >Telephone<input
+                  type="tel"
+                  name="phone"
+                  placeholder="+94..."
+                  required
+              /></label>
+            </div>
+            <label
+              >Email address<input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required /></label
+            ><label
+              >Treatment interest<select name="treatment" required>
+                <option value="">Select a treatment</option>
+                <option>Gynaecology Treatments</option>
+                <option>Acupuncture</option>
+                <option>Panchakarma</option>
+                <option>Fractures &amp; Sprains</option>
+                <option>Nasya Therapy</option>
+                <option>General Consultation</option>
+              </select></label
+            ><label
+              >Message<textarea
+                name="message"
+                rows="5"
+                placeholder="Briefly describe your request"
+                required
+              ></textarea></label
+            ><button class="button button-dark" type="submit">
+              Send Appointment Request
+            </button>
+            <p class="form-message">
+              The first message sends a confirmation email to activate the form.
+            </p>
+          </form>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            title="Hospital location map"
+            src="https://www.google.com/maps?q=Colombo%2C%20Sri%20Lanka&z=13&output=embed"
+            width="100%"
+            height="450"
+            style="border: 0"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-brand">
+        <span class="brand-mark">☘</span>
+        <div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div>
+      </div>
+      <p>Traditional care for balanced living.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="about.html">About Us</a
+        ><a href="treatments.html">Treatments</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">
+        © <span id="year"></span> SUWAYU Ayurveda Medical Center.
+      </p>
+    </footer>
+    <button class="back-to-top" id="backToTop">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

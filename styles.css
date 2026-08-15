@@ -545,6 +545,244 @@ footer > p { color: rgba(255,255,255,.58); font-size: .82rem; }
 }
 .treatment-cta p { margin: 15px 0 25px; color: rgba(255,255,255,.7); }
 
+
+
+/* ========================================
+   PATIENT FEEDBACK MARQUEE
+   ======================================== */
+
+.reviews {
+  overflow: hidden;
+  background: #f7f8f4;
+}
+
+.reviews .section-heading {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.reviews .section-heading h2 {
+  margin-bottom: 12px;
+}
+
+.reviews .section-heading p:last-child {
+  color: #747b72;
+}
+
+
+/* Marquee */
+
+.marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 40px;
+}
+
+
+/* Moving track */
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+
+  animation: feedbackMarquee 35s linear infinite;
+}
+
+
+/* Cards */
+
+.review-card {
+  flex: 0 0 350px;
+
+  min-height: 250px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(50, 70, 53, 0.08);
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 35px rgba(40, 55, 42, 0.07);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Hover */
+
+.review-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 45px rgba(40, 55, 42, 0.13);
+}
+
+
+/* Stars */
+
+.review-card .stars {
+  color: #b68b3c;
+
+  font-size: 15px;
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+
+/* Review */
+
+.review-card > p {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 20px;
+  line-height: 1.45;
+
+  font-weight: 600;
+
+  color: #4d554c;
+}
+
+
+/* Reviewer */
+
+.review-card footer {
+  margin-top: 25px;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(45, 72, 49, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review-card footer strong {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #29372b;
+}
+
+.review-card footer span {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  color: #8a9087;
+}
+
+
+/* ========================================
+   AUTOMATIC MOVEMENT
+   ======================================== */
+
+@keyframes feedbackMarquee {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* ========================================
+   FADE EDGES
+   ======================================== */
+
+.marquee-wrap::before,
+.marquee-wrap::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 100px;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.marquee-wrap::before {
+  left: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      #f7f8f4,
+      transparent
+    );
+}
+
+.marquee-wrap::after {
+  right: 0;
+
+  background:
+    linear-gradient(
+      to left,
+      #f7f8f4,
+      transparent
+    );
+}
+
+
+@media (max-width: 768px) {
+
+  .review-card {
+    flex: 0 0 300px;
+
+    min-height: 230px;
+
+    padding: 25px;
+  }
+
+  .review-card > p {
+    font-size: 18px;
+  }
+
+  .marquee-track {
+    gap: 16px;
+
+    animation-duration: 28s;
+  }
+
+  .marquee-wrap::before,
+  .marquee-wrap::after {
+    width: 40px;
+  }
+
+}
+
+
+
 @media (max-width: 1100px) {
     .main-nav { gap: 18px; }
     .nav-cta { display: none; }

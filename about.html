@@ -1,5 +1,326 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About Us | SUWAYU Ayurveda Medical Center</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body class="inner-page"><header class="site-header"><a href="index.html" class="brand"><span class="brand-mark">☘</span><span><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span></a><button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" id="mainNav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link active">About Us</a><a href="treatments.html" class="nav-link">Treatments</a><a href="contact.html" class="nav-link">Contact Us</a><a href="contact.html" class="nav-cta">Book Consultation</a></nav></header>
-<main><section class="page-banner"><p class="eyebrow light">About SUWAYU</p><h1>Traditional healing, personal care.</h1><p>Discover our approach to authentic Ayurveda, thoughtful consultation and long-term wellbeing.</p></section>
-<section class="about section"><div class="about-images reveal"><img class="about-main" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1000&q=85" alt="Peaceful herbal wellness setting"><img class="about-small" src="https://images.unsplash.com/photo-1611073615848-d6ff6215931f?auto=format&fit=crop&w=700&q=85" alt="Traditional herbal oils"><div class="experience-badge"><strong>Care</strong><span>Rooted in tradition</span></div></div><div class="about-content reveal"><p class="eyebrow">Who we are</p><h2>Healing that respects your body, mind and way of life.</h2><p>SUWAYU Ayurveda Medical Center is a welcoming centre for authentic Ayurvedic treatment and holistic wellness. Every patient begins with a detailed consultation, allowing care to reflect their needs, lifestyle and health concerns.</p><p>Our peaceful, clean and private environment brings traditional therapies, herbal preparations, dietary guidance and practical lifestyle recommendations together.</p><div class="values"><div><span>✓</span><p><strong>Individual assessment</strong><br>Care planned around each patient.</p></div><div><span>✓</span><p><strong>Traditional practice</strong><br>Therapies rooted in Ayurveda.</p></div><div><span>✓</span><p><strong>Respectful service</strong><br>Private and compassionate care.</p></div><div><span>✓</span><p><strong>Wellness guidance</strong><br>Support beyond treatment.</p></div></div><a href="contact.html" class="text-link">Meet us for a consultation <span>→</span></a></div></section><section class="mission section"><div class="mission-card reveal"><p class="eyebrow light">Our purpose</p><h2>To make traditional healing accessible, responsible and deeply personal.</h2><p>We create a trusted space where heritage, clinical attention and modern patient comfort work together.</p></div></section></main>
-<footer><div class="footer-brand"><span class="brand-mark">☘</span><div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div></div><p>Traditional care for balanced living.</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="treatments.html">Treatments</a><a href="contact.html">Contact</a></div><p class="copyright">© <span id="year"></span> SUWAYU Ayurveda Medical Center. All rights reserved.</p></footer><button class="back-to-top" id="backToTop">↑</button><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Us | SUWAYU Ayurveda Medical Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="inner-page">
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark">☘</span
+        ><span
+          ><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span
+        ></a
+      ><button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a
+        ><a href="about.html" class="nav-link active">About Us</a
+        ><a href="treatments.html" class="nav-link">Treatments</a
+        ><a href="contact.html" class="nav-link">Contact Us</a
+        ><a href="contact.html" class="nav-cta">Book Consultation</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <p class="eyebrow light">About SUWAYU</p>
+        <h1>Traditional healing, personal care.</h1>
+        <p>
+          Discover our approach to authentic Ayurveda, thoughtful consultation
+          and long-term wellbeing.
+        </p>
+      </section>
+      <section class="about section">
+        <div class="about-images reveal">
+          <img
+            class="about-main"
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1000&q=85"
+            alt="Peaceful herbal wellness setting"
+          /><img
+            class="about-small"
+            src="https://images.unsplash.com/photo-1611073615848-d6ff6215931f?auto=format&fit=crop&w=700&q=85"
+            alt="Traditional herbal oils"
+          />
+          <div class="experience-badge">
+            <strong>Care</strong><span>Rooted in tradition</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">Who we are</p>
+          <h2>Healing that respects your body, mind and way of life.</h2>
+          <p>
+            SUWAYU Ayurveda Medical Center is a welcoming centre for authentic
+            Ayurvedic treatment and holistic wellness. Every patient begins with
+            a detailed consultation, allowing care to reflect their needs,
+            lifestyle and health concerns.
+          </p>
+          <p>
+            Our peaceful, clean and private environment brings traditional
+            therapies, herbal preparations, dietary guidance and practical
+            lifestyle recommendations together.
+          </p>
+          <div class="values">
+            <div>
+              <span>✓</span>
+              <p>
+                <strong>Individual assessment</strong><br />Care planned around
+                each patient.
+              </p>
+            </div>
+            <div>
+              <span>✓</span>
+              <p>
+                <strong>Traditional practice</strong><br />Therapies rooted in
+                Ayurveda.
+              </p>
+            </div>
+            <div>
+              <span>✓</span>
+              <p>
+                <strong>Respectful service</strong><br />Private and
+                compassionate care.
+              </p>
+            </div>
+            <div>
+              <span>✓</span>
+              <p>
+                <strong>Wellness guidance</strong><br />Support beyond
+                treatment.
+              </p>
+            </div>
+          </div>
+          <a href="contact.html" class="text-link"
+            >Meet us for a consultation <span>→</span></a
+          >
+        </div>
+      </section>
+      <section class="mission section">
+                
+            <!-- =========================
+                PATIENT FEEDBACK
+                ========================= -->
+
+            <section class="reviews section">
+            <div class="section-heading centered reveal">
+                <p class="eyebrow">Patient feedback</p>
+
+                <h2>What our patients say</h2>
+
+                <p>
+                Kind words shared by patients about their experience at SUWAYU.
+                </p>
+            </div>
+
+            <div class="marquee-wrap reveal">
+
+                <div class="marquee" aria-label="Patient reviews">
+
+                <div class="marquee-track">
+
+                    <!-- REVIEW 1 -->
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        Highly recommended for Ayurveda treatment and good expert doctor here.
+                    </p>
+
+                    <footer>
+                        <strong>Viraj Madhuranga</strong>
+                        <span>✓ Verified Google review · 8 months ago</span>
+                    </footer>
+                    </div>
+
+
+                    <!-- REVIEW 2 -->
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        We used to get the treatments since 2015. For my father she was a
+                        real caring doctor. Excellent service.
+                    </p>
+
+                    <footer>
+                        <strong>Aruni Nilangi</strong>
+                        <span>✓ Verified Google review · 4 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <!-- REVIEW 3 -->
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        It is such a great place for Ayurvedic medicine. Specially the
+                        doctor is very kind.
+                    </p>
+
+                    <footer>
+                        <strong>Roshan Waduge</strong>
+                        <span>✓ Verified Google review · 4 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <!-- REVIEW 4 -->
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        She makes wonders happen! Finally I can walk! She is not just a
+                        doctor, she is much more than that.
+                    </p>
+
+                    <footer>
+                        <strong>Fr. F.</strong>
+                        <span>✓ Verified Google review · 7 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <!-- REVIEW 5 -->
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        Good place for ayurvedic medicine.
+                    </p>
+
+                    <footer>
+                        <strong>Gayashan Vidusha</strong>
+                        <span>✓ Verified Google review · 8 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <!-- DUPLICATE REVIEWS FOR SEAMLESS MARQUEE -->
+
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        Highly recommended for Ayurveda treatment and good expert doctor here.
+                    </p>
+
+                    <footer>
+                        <strong>Viraj Madhuranga</strong>
+                        <span>✓ Verified Google review · 8 months ago</span>
+                    </footer>
+                    </div>
+
+
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        We used to get the treatments since 2015. For my father she was a
+                        real caring doctor. Excellent service.
+                    </p>
+
+                    <footer>
+                        <strong>Aruni Nilangi</strong>
+                        <span>✓ Verified Google review · 4 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        It is such a great place for Ayurvedic medicine. Specially the
+                        doctor is very kind.
+                    </p>
+
+                    <footer>
+                        <strong>Roshan Waduge</strong>
+                        <span>✓ Verified Google review · 4 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        She makes wonders happen! Finally I can walk! She is not just a
+                        doctor, she is much more than that.
+                    </p>
+
+                    <footer>
+                        <strong>Fr. F.</strong>
+                        <span>✓ Verified Google review · 7 years ago</span>
+                    </footer>
+                    </div>
+
+
+                    <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        Good place for ayurvedic medicine.
+                    </p>
+
+                    <footer>
+                        <strong>Gayashan Vidusha</strong>
+                        <span>✓ Verified Google review · 8 years ago</span>
+                    </footer>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+            </section>
+
+
+        <div class="mission-card reveal">
+          <p class="eyebrow light">Our purpose</p>
+          <h2>
+            To make traditional healing accessible, responsible and deeply
+            personal.
+          </h2>
+          <p>
+            We create a trusted space where heritage, clinical attention and
+            modern patient comfort work together.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-brand">
+        <span class="brand-mark">☘</span>
+        <div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div>
+      </div>
+      <p>Traditional care for balanced living.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="about.html">About Us</a
+        ><a href="treatments.html">Treatments</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">
+        © <span id="year"></span> SUWAYU Ayurveda Medical Center. All rights
+        reserved.
+      </p>
+    </footer>
+    <button class="back-to-top" id="backToTop">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,10 +1,162 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Treatments | SUWAYU Ayurveda Medical Center</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body class="inner-page"><header class="site-header"><a href="index.html" class="brand"><span class="brand-mark">☘</span><span><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span></a><button class="menu-button" id="menuButton" aria-label="Open navigation"><span></span><span></span><span></span></button><nav class="main-nav" id="mainNav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About Us</a><a href="treatments.html" class="nav-link active">Treatments</a><a href="contact.html" class="nav-link">Contact Us</a><a href="contact.html" class="nav-cta">Book Consultation</a></nav></header>
-<main><section class="page-banner"><p class="eyebrow light">Our treatments</p><h1>Care designed around you.</h1><p>Every therapy is recommended only after an individual consultation and assessment.</p></section><section class="treatments section"><div class="section-heading reveal"><p class="eyebrow">Specialised care</p><h2>Treatments for different health needs</h2><p>Procedure, duration and suitability may differ for every patient.</p></div><div class="treatment-grid">
-<article class="treatment-card reveal"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=85" alt="Women's wellness"><div><span>Women's health</span><h3>Gynaecology Treatments</h3><p>Personalised support for menstrual wellness, reproductive health and postnatal wellbeing.</p><a href="gynaecology.html">View treatment workflow →</a></div></article>
-<article class="treatment-card reveal"><img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=85" alt="Acupuncture"><div><span>Supportive therapy</span><h3>Acupuncture</h3><p>Complementary treatment supporting pain management, relaxation, movement and balance.</p><a href="acupuncture.html">View treatment workflow →</a></div></article>
-<article class="treatment-card reveal"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=85" alt="Ayurvedic oil therapy"><div><span>Detoxification</span><h3>Panchakarma</h3><p>A structured cleansing and rejuvenation programme selected through clinical assessment.</p><a href="panchakarma.html">View treatment workflow →</a></div></article>
-<article class="treatment-card reveal"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85" alt="Injury care"><div><span>Orthopaedic care</span><h3>Fractures &amp; Sprains <small>(කැඩුම් බිදුම්)</small></h3><p>Traditional supportive care for selected injuries, rehabilitation and mobility.</p><a href="fractures-sprains.html">View treatment workflow →</a></div></article>
-<article class="treatment-card reveal"><img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&w=900&q=85" alt="Herbal preparation"><div><span>Head and sinus care</span><h3>Nasya Therapy</h3><p>A prescribed nasal procedure used as part of head, sinus and respiratory care.</p><a href="nasya.html">View treatment workflow →</a></div></article>
-<article class="treatment-card consultation-card reveal"><div><span>Unsure where to begin?</span><h3>Start with a personalised consultation.</h3><p>Our team will help you understand the most appropriate next step.</p><a class="button button-primary" href="contact.html">Contact the Medical Center</a></div></article></div></section></main>
-<footer><div class="footer-brand"><span class="brand-mark">☘</span><div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div></div><p>Traditional care for balanced living.</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="treatments.html">Treatments</a><a href="contact.html">Contact</a></div><p class="copyright">© <span id="year"></span> SUWAYU Ayurveda Medical Center.</p></footer><button class="back-to-top" id="backToTop">↑</button><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Treatments | SUWAYU Ayurveda Medical Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="inner-page">
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark">☘</span
+        ><span
+          ><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></span
+        ></a
+      ><button class="menu-button" id="menuButton" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a
+        ><a href="about.html" class="nav-link">About Us</a
+        ><a href="treatments.html" class="nav-link active">Treatments</a
+        >
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact Us</a
+        ><a href="contact.html" class="nav-cta">Book Consultation</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <p class="eyebrow light">Our treatments</p>
+        <h1>Care designed around you.</h1>
+        <p>
+          Every therapy is recommended only after an individual consultation and
+          assessment.
+        </p>
+      </section>
+      <section class="treatments section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Specialised care</p>
+          <h2>Treatments for different health needs</h2>
+          <p>
+            Procedure, duration and suitability may differ for every patient.
+          </p>
+        </div>
+        <div class="treatment-grid">
+          <article class="treatment-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=85"
+              alt="Women's wellness"
+            />
+            <div>
+              <span>Women's health</span>
+              <h3>Gynaecology Treatments</h3>
+              <p>
+                Personalised support for menstrual wellness, reproductive health
+                and postnatal wellbeing.
+              </p>
+              <a href="gynaecology.html">View treatment workflow →</a>
+            </div>
+          </article>
+          <article class="treatment-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=85"
+              alt="Acupuncture"
+            />
+            <div>
+              <span>Supportive therapy</span>
+              <h3>Acupuncture</h3>
+              <p>
+                Complementary treatment supporting pain management, relaxation,
+                movement and balance.
+              </p>
+              <a href="acupuncture.html">View treatment workflow →</a>
+            </div>
+          </article>
+          <article class="treatment-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=85"
+              alt="Ayurvedic oil therapy"
+            />
+            <div>
+              <span>Detoxification</span>
+              <h3>Panchakarma</h3>
+              <p>
+                A structured cleansing and rejuvenation programme selected
+                through clinical assessment.
+              </p>
+              <a href="panchakarma.html">View treatment workflow →</a>
+            </div>
+          </article>
+          <article class="treatment-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85"
+              alt="Injury care"
+            />
+            <div>
+              <span>Orthopaedic care</span>
+              <h3>Fractures &amp; Sprains <small>(කැඩුම් බිදුම්)</small></h3>
+              <p>
+                Traditional supportive care for selected injuries,
+                rehabilitation and mobility.
+              </p>
+              <a href="fractures-sprains.html">View treatment workflow →</a>
+            </div>
+          </article>
+          <article class="treatment-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&w=900&q=85"
+              alt="Herbal preparation"
+            />
+            <div>
+              <span>Head and sinus care</span>
+              <h3>Nasya Therapy</h3>
+              <p>
+                A prescribed nasal procedure used as part of head, sinus and
+                respiratory care.
+              </p>
+              <a href="nasya.html">View treatment workflow →</a>
+            </div>
+          </article>
+          <article class="treatment-card consultation-card reveal">
+            <div>
+              <span>Unsure where to begin?</span>
+              <h3>Start with a personalised consultation.</h3>
+              <p>
+                Our team will help you understand the most appropriate next
+                step.
+              </p>
+              <a class="button button-primary" href="contact.html"
+                >Contact the Medical Center</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-brand">
+        <span class="brand-mark">☘</span>
+        <div><strong>SUWAYU</strong><small>Ayurveda Medical Center</small></div>
+      </div>
+      <p>Traditional care for balanced living.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="about.html">About Us</a
+        ><a href="treatments.html">Treatments</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">
+        © <span id="year"></span> SUWAYU Ayurveda Medical Center.
+      </p>
+    </footer>
+    <button class="back-to-top" id="backToTop">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
